@@ -1,11 +1,15 @@
 @charset "UTF-8";
-@import url(Styles/header.css);
 
+        /* Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
+
+         /* Cores */
     --cor1: #FFFFFF;
     --cor2: black;
+
+    /* Fontes */
     --font: "Inter", sans-serif;
 }
 
@@ -23,6 +27,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-family: var(--font);
+  overflow-x: hidden;
+  height: 100vh;
 }
 
     /* CABEÇALHO */
@@ -32,6 +38,7 @@ body {
   background-repeat: no-repeat;
   background-position:top center;
   background-size: cover;
+  width: 100vw;
   height: 100vh;
   
   & img {
@@ -124,8 +131,9 @@ body {
     align-items: center;
     justify-content: center;
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     gap: 5px;
+    cursor: pointer;
   }
 
   & .btn-play {
@@ -151,5 +159,40 @@ body {
     background-color: var(--cor2);
   }
 }
+
+.container_filmes-Lista {
+  margin-top: 51%;
+  padding-bottom: 1em;
+  position: relative;
+  
+  & h2 {
+    color: var(--cor1);
+    font-size: 18px;
+    font-weight: 500;
+    transition: .5s;
+  }
+}
+h2:hover {
+  color: red;
+}
+
+.filmes {
+  position: absolute;
+  top: 100%;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  
+  & .filme{
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.632);
+  }
+}
+
+
 
 
