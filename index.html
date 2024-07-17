@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Netflix</title>
 </head>
+
 <body>
+  <!-- CABEÇALHO -->
   <header class="header">
 
     <div class="container">
-    <img src="Imgs/logo.svg" alt="Logo Netflix" width="150px" >
-    <nav class="menu">
-      <a href="#">Inicio</a>
-      <a href="#">Séries</a>
-      <a href="#">Filmes</a>
-      <a href="#">Bombando</a>
-      <a href="#">Minha Lista</a>
-    </nav>
-    <div class="menu_imagens">
-      <img src="Imgs/lupa.svg" alt="Lupa de Pesquisa">
-      <img src="Imgs/sino.svg" alt="Sino de Notificações">
-      <img src="Imgs/user 1.svg" alt="Logo Perfil">
-      <img src="Imgs/arrow2.svg" alt="Arrow Veja mais" width="15px">
+      <img src="Imgs/logo.svg" alt="Logo Netflix" width="150px">
+      <!-- MENU -->
+      <nav class="menu">
+        <a href="#">Inicio</a>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Bombando</a>
+        <a href="#">Minha Lista</a>
+      </nav>
+      <div class="menu_imagens">
+        <img src="Imgs/lupa.svg" alt="Lupa de Pesquisa">
+        <img src="Imgs/sino.svg" alt="Sino de Notificações">
+        <img src="Imgs/user 1.svg" alt="Logo Perfil">
+        <img src="Imgs/arrow2.svg" alt="Arrow Veja mais" width="15px">
+      </div>
     </div>
-  </div>
   </header>
 
+    <!-- CONTÉUDO -->
   <main class="main">
+
+    <!-- SECTION 1 - FILME DESTAQUE -->
     <section class="info_filme">
       <img src="Imgs/poster 1.svg" alt="Logo Filme" width="560px">
 
@@ -36,33 +43,151 @@
       </div>
 
       <div class="info_conteudo">
-      <button class="botao btn-play"><img src="Imgs/play.svg" alt="Botao Play">Assistir</button>
+        <button class="botao btn-play"><img src="Imgs/play.svg" alt="Botao Play">Assistir</button>
         <button class="botao btn-info"><img src="Imgs/info.svg" alt="Botao Info">Mais Informações</button>
       </div>
     </section>
 
-    <section class="container_filmes-Lista">
+    <!-- SECTION 2 - MINHA LISTA -->
+
+    <section class="container_filmes">
       <h2>Minha Lista</h2>
       <div class="filmes">
-      <div class="filme_animado filme">
-        <img src="Imgs/poster_01.svg" alt="">
+
+        <div class="filme_animado filme">
+          <img src="Imgs/poster_01.svg" alt="Bojack Horseman">
+        </div>
+
+        <div class="filme_suspense filme">
+          <img src="Imgs/poster_02.svg" alt="O ZARK">
+        </div>
+
+        <div class="serie_comedia filme">
+          <img src="Imgs/poster_03.svg" alt="A vizinha da Mulher na Janela">
+        </div>
+
+        <div class="serie_drama filme">
+          <img src="Imgs/poster_04.svg" alt="Breaking Bad">
+          <img src="Imgs/poster_05.svg" alt="The end of the f***ING World">
+        </div>
       </div>
-      <div class="filme_drama filme">
-        <img src="Imgs/poster_02.svg" alt="">
+    </section>
+
+    <!-- SECTION 3 - EM ALTA -->
+
+    <section class="container_filmes">
+      <h2>Em Alta</h2>
+      <div class="filmes">
+
+        <div class="serie_terror filme">
+          <img src="Imgs/poster_06.svg" alt="Stranger Things">
+        </div>
+
+        <div class="serie_drama filme">
+          <img src="Imgs/poster_07.svg" alt="The Umbrella Academy">
+        </div>
+
+        <div class="img_peaky-poster filme">
+          <img src="Imgs/poster_08.svg" alt="Peaky Blinders" > 
+        </div>
+
+        <div class="filme_esporte filme">
+             <img src="Imgs/poster_09.svg" alt="Arremessando Alto">
+        </div>
+
+        <div class="filme_romance filme">
+          <img src="Imgs/poster_10.svg" alt="Amor e Gelato">
+        </div>
       </div>
-      <div class="filme_comedia filme">
-        <img src="Imgs/poster_03.svg" alt="">
+    </section>
+
+    <!-- SECTION 4 - SÉRIES ESTRANGEIRAS -->
+
+    <section class="container_filmes">
+      <h2>Séries estrangeiras</h2>
+      <div class="filmes">
+
+        <div class="serie_drama drama filme">
+          <img src="Imgs/poster_14.svg" alt="Queen Loretta">
+           <img src="Imgs/poster_15.svg" alt="As 7 Vidas de LEA">
+           <img src="Imgs/poster_16.svg" alt="Young Royals">
+           <img src="Imgs/poster_17.svg" alt="Bem-vindos ao Éden">
+           <img src="Imgs/poster_18.svg" alt="DARK">
+        </div>
       </div>
-      <div class="fime terror filme">
-        <img src="Imgs/poster_04.svg" alt="">
-        <img src="Imgs/poster_05.svg" alt="">
+    </section>
+    
+    <!-- SECTION 5 SÉRIES EXCÊNTRICAS DE HUMOR ÁCIDO -->
+
+    <section class="container_filmes">
+      <h2>Séries excêntricas de humor ácido</h2>
+      <div class="filmes">
+
+        <div class="serie_drama filme">
+          <img src="Imgs/poster_02.svg" alt="O ZARK">
+        </div>
+
+        <div class="serie_animado filme">
+          <img src="Imgs/poster_01.svg" alt="Bojack Horseman" >
+        </div>
+
+        <div class="serie_sitcom filme">
+          <img src="Imgs/poster_13.svg" alt="The Good Place">
+       
+        </div>
+
+        <div class="serie_documentário filme">
+          <img src="Imgs/poster_11.svg" alt="Conversando com um Serial Killer: Ted Bundy">
+        </div>
+
+        <div class="serie_comedia filme">
+          <img src="Imgs/poster_12.svg" alt="Gabriel FluffyIglesias: One Show Fits All">
+        </div>
       </div>
-    </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
+    <div class="social-links">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </div>
 
-  </footer>
+    <div class="link-content">
+      <div class="link-content__info">
+        <ul>
+          <li>Idioma e legendas</li>
+          <li>Imprensa</li>
+          <li>Privacidade</li>
+          <li>Entre em contato</li>
+        </ul>
+        <ul>
+          <li>Audiodescrição</li>
+          <li>Relações com investidores</li>
+          <li>Avisos legais</li>
+        </ul>
+        <ul>
+          <li>Centro de ajuda</li>
+          <li>Carreiras</li>
+          <li>Preferência de cookies</li>
+        </ul>
+        <ul>
+          <li>Cartão pré-pago</li>
+          <li>Termos de uso</li>
+          <li>informações corporativas</li>
+        </ul>
+      </div>
+      <div class="link-content__service">
+        <button class="link-content__service-code">Código do serviço</button>
+      </div>
+      <div class="link-content__copyright">
+        <span>© 1997-2022 Netflix, Inc.&nbsp;&nbsp;&lrm;</span>
+      </div>
+  </footer> 
+  <!-- Fim do Footer -->
 </body>
+
 </html>
